@@ -63,7 +63,7 @@ pip install -r requirements.txt
    * Google Chrome:
    
       ``` py .\main.py --browser chrome ```
-   * Google Chrome:
+   * Firefox:
    
       ``` py main.py --browser firefox ```
    
