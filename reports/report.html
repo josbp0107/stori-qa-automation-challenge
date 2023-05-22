@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Result</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-05-22 12:24:23</p>
+                <p class='attribute'><strong>Duration: </strong>69.823s</p>
+                <p class='attribute'><strong>Status: </strong>Pass: 6, Fail: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_dropdown_example (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_iframe_example (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_suggestion_class (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_switch_alert (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_table_example (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='success'>
+                                <td class="col-xs-9">test_table_fixed (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-success">
+                                        
+                                            Pass
+                                        
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                            
+                        
+                            <tr class='danger'>
+                                <td class="col-xs-9">test_switch_tab (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-danger">
+                                        
+                                            Fail
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>AssertionError</p>
+                                        <p>El botón esperado 'View all courses' no está presente en la nueva ventana.</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                            <tr class='danger'>
+                                <td class="col-xs-9">test_switch_window (__main__.HomePageTests)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-danger">
+                                        
+                                            Fail
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>AssertionError</p>
+                                        <p>El texto esperado '30 day money back guarantee' no está presente en la nueva ventana.</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                        <tr>
+                            <td>
+                               Total Test Runned: 8
+                            </td>
+                            <td>
+                                <span>Pass: 6, Fail: 2</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
